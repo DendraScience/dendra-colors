@@ -8,9 +8,9 @@
  * @module dendra-colors
  */
 
-const chroma = require('chroma-js');
+var chroma = require('chroma-js');
 
-const WHEEL = {
+var WHEEL = {
   // Color wheel colors, 12 plus 1 extra WHEEL_BLUE_BLUE_GREEN
   // SEE: http://www.malanenewman.com/images/colorwheel_warm_cool.gif
   RED: '#dc635c',
@@ -28,7 +28,7 @@ const WHEEL = {
   RED_VIOLET: '#dc95b6'
 };
 
-const BOOTSTRAP = {
+var BOOTSTRAP = {
   RED: WHEEL.RED,
   ORANGE: WHEEL.ORANGE,
   YELLOW: WHEEL.YELLOW,
@@ -40,11 +40,11 @@ const BOOTSTRAP = {
 
   // Other random colors not in the wheel
   // SEE: http://chir.ag/projects/name-that-color/#6195ED
-};const NAMED = {
+};var NAMED = {
   HEMLOCK_APPROX: '#615c42'
 };
 
-const SERIES = {
+var SERIES = {
   AIR_SPEED_AVG: WHEEL.BLUE_VIOLET,
   AIR_SPEED_MAX: WHEEL.RED,
   AIR_TEMP: [WHEEL.BLUE, WHEEL.YELLOW],
@@ -53,7 +53,7 @@ const SERIES = {
   SOLAR_PAR: WHEEL.YELLOW_GREEN
 };
 
-const TILE = {
+var TILE = {
   AIR_MOIST: chroma(WHEEL.BLUE).darken(0.6).hex(),
   AIR_PRES: chroma(WHEEL.BLUE).darken(0.6).hex(),
   AIR_TEMP: chroma(WHEEL.BLUE).darken(0.6).hex(),
@@ -65,9 +65,9 @@ const TILE = {
 };
 
 module.exports = {
-  BOOTSTRAP,
-  NAMED,
-  SERIES,
-  TILE,
-  WHEEL
+  BOOTSTRAP: BOOTSTRAP,
+  NAMED: NAMED,
+  SERIES: SERIES,
+  TILE: TILE,
+  WHEEL: WHEEL
 };

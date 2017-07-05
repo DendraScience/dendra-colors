@@ -1,6 +1,6 @@
 # Dendra Colors
 
-Defines color constants for Dendra charts and dashboards. Can be used as a Node.js module, or as a direct `<script>` include in the browser.
+Defines color constants for Dendra charts and dashboards.
 
 
 ## Instructions
@@ -9,8 +9,13 @@ Defines color constants for Dendra charts and dashboards. Can be used as a Node.
 
 2. Clone this repo.
 
-3. Make this project directory the current directory, i.e. `cd dendro-colors`.
+3. Make this project directory the current directory, i.e. `cd dendra-colors`.
 
 4. Install modules via `npm install`.
 
 5. If all goes well, you should be able to run the predefined package scripts.
+
+
+## TODO
+
+- [ ] Write tests
