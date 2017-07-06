@@ -14,8 +14,3 @@ Defines color constants for Dendra charts and dashboards.
 4. Install modules via `npm install`.
 
 5. If all goes well, you should be able to run the predefined package scripts.
-
-
-## TODO
-
-- [ ] Write tests

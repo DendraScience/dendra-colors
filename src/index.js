@@ -6,7 +6,7 @@
  * @module dendra-colors
  */
 
-const chroma = require('chroma-js')
+import chroma from 'chroma-js'
 
 const WHEEL = {
   // Color wheel colors, 12 plus 1 extra WHEEL_BLUE_BLUE_GREEN
@@ -63,7 +63,7 @@ const TILE = {
   WIND: chroma(WHEEL.BLUE_VIOLET).darken(0.6).hex()
 }
 
-module.exports = {
+export default {
   BOOTSTRAP,
   NAMED,
   SERIES,

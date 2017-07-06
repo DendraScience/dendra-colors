@@ -1,14 +1,14 @@
 'use strict';
 
-/**
- * Dendra color constants for charts and dashboards.
- *
- * @author J. Scott Smith
- * @license BSD-2-Clause-FreeBSD
- * @module dendra-colors
- */
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
-var chroma = require('chroma-js');
+var _chromaJs = require('chroma-js');
+
+var _chromaJs2 = _interopRequireDefault(_chromaJs);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var WHEEL = {
   // Color wheel colors, 12 plus 1 extra WHEEL_BLUE_BLUE_GREEN
@@ -26,7 +26,13 @@ var WHEEL = {
   BLUE_VIOLET: '#a695dc',
   VIOLET: '#af7abe',
   RED_VIOLET: '#dc95b6'
-};
+}; /**
+    * Dendra color constants for charts and dashboards.
+    *
+    * @author J. Scott Smith
+    * @license BSD-2-Clause-FreeBSD
+    * @module dendra-colors
+    */
 
 var BOOTSTRAP = {
   RED: WHEEL.RED,
@@ -54,20 +60,21 @@ var SERIES = {
 };
 
 var TILE = {
-  AIR_MOIST: chroma(WHEEL.BLUE).darken(0.6).hex(),
-  AIR_PRES: chroma(WHEEL.BLUE).darken(0.6).hex(),
-  AIR_TEMP: chroma(WHEEL.BLUE).darken(0.6).hex(),
-  NOTIFY_OFFLINE: chroma(WHEEL.RED).darken(0.6).hex(),
-  NOTIFY_ONLINE: chroma(WHEEL.YELLOW_GREEN).darken(0.6).hex(),
-  PRECIP: chroma(WHEEL.BLUE_GREEN).darken(0.6).hex(),
-  SOLAR: chroma(WHEEL.ORANGE).darken(0.6).hex(),
-  WIND: chroma(WHEEL.BLUE_VIOLET).darken(0.6).hex()
+  AIR_MOIST: (0, _chromaJs2.default)(WHEEL.BLUE).darken(0.6).hex(),
+  AIR_PRES: (0, _chromaJs2.default)(WHEEL.BLUE).darken(0.6).hex(),
+  AIR_TEMP: (0, _chromaJs2.default)(WHEEL.BLUE).darken(0.6).hex(),
+  NOTIFY_OFFLINE: (0, _chromaJs2.default)(WHEEL.RED).darken(0.6).hex(),
+  NOTIFY_ONLINE: (0, _chromaJs2.default)(WHEEL.YELLOW_GREEN).darken(0.6).hex(),
+  PRECIP: (0, _chromaJs2.default)(WHEEL.BLUE_GREEN).darken(0.6).hex(),
+  SOLAR: (0, _chromaJs2.default)(WHEEL.ORANGE).darken(0.6).hex(),
+  WIND: (0, _chromaJs2.default)(WHEEL.BLUE_VIOLET).darken(0.6).hex()
 };
 
-module.exports = {
+exports.default = {
   BOOTSTRAP: BOOTSTRAP,
   NAMED: NAMED,
   SERIES: SERIES,
   TILE: TILE,
   WHEEL: WHEEL
 };
+module.exports = exports['default'];
